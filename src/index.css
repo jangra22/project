@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    background-color: #FAFAFA;
+  }
+}
+
+@layer components {
+  .excel-button {
+    @apply px-3 py-1.5 text-sm font-normal text-excel-gray-700 bg-white border border-excel-gray-300 hover:bg-excel-gray-50 hover:border-excel-gray-400 focus:outline-none focus:ring-1 focus:ring-excel-blue transition-all duration-150 flex items-center gap-2;
+  }
+  
+  .excel-button-primary {
+    @apply bg-excel-green text-white border-excel-green hover:bg-green-700;
+  }
+  
+  .excel-cell {
+    @apply border-r border-b border-excel-gray-300 bg-white text-sm text-excel-gray-800 px-2 py-1 min-h-[24px] flex items-center cursor-cell;
+  }
+  
+  .excel-cell:hover {
+    @apply bg-excel-gray-50;
+  }
+  
+  .excel-cell.selected {
+    @apply ring-2 ring-excel-blue ring-inset bg-excel-lightblue;
+  }
+  
+  .excel-header-cell {
+    @apply bg-excel-gray-100 border-r border-b border-excel-gray-300 text-excel-gray-700 font-medium text-sm px-2 py-1 min-h-[24px] flex items-center justify-center cursor-pointer;
+  }
+  
+  .excel-header-cell:hover {
+    @apply bg-excel-gray-200;
+  }
+  
+  .excel-row-number {
+    @apply bg-excel-gray-100 border-r border-b border-excel-gray-300 text-excel-gray-600 text-sm px-2 py-1 min-h-[24px] flex items-center justify-center cursor-pointer font-normal;
+  }
+  
+  .excel-row-number:hover {
+    @apply bg-excel-gray-200;
+  }
+  
+  .status-badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+  }
+  
+  .status-complete {
+    @apply bg-green-100 text-status-complete;
+  }
+  
+  .status-in-progress {
+    @apply bg-orange-100 text-status-in-progress;
+  }
+  
+  .status-to-start {
+    @apply bg-blue-100 text-status-to-start;
+  }
+  
+  .status-blocked {
+    @apply bg-red-100 text-status-blocked;
+  }
+  
+  .status-submitted {
+    @apply bg-purple-100 text-status-submitted;
+  }
+  
+  .priority-high {
+    @apply bg-red-100 text-priority-high;
+  }
+  
+  .priority-medium {
+    @apply bg-orange-100 text-priority-medium;
+  }
+  
+  .priority-low {
+    @apply bg-green-100 text-priority-low;
+  }
+  
+  .tab-button {
+    @apply px-4 py-2 text-sm font-normal text-excel-gray-700 bg-white border-b-2 border-transparent hover:border-excel-gray-300 transition-all duration-150;
+  }
+  
+  .tab-button.active {
+    @apply text-excel-blue border-excel-blue bg-excel-lightblue;
+  }
+  
+  .user-avatar {
+    @apply w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-medium border-2 border-white shadow-sm;
+  }
+}
