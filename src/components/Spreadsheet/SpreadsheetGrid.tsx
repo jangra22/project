@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SpreadsheetData } from '../../types';
-import { columns, getColumnLabel } from '../../data/mockData';
+// import { columns, getColumnLabel } from '../../data/mockData';
 import SpreadsheetRow from './SpreadsheetRow';
 import SpreadsheetHeader from './SpreadsheetHeader';
 
