@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const Navigation: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('Spreadsheet 3');
+  //const [activeTab, setActiveTab] = useState('Spreadsheet 3');
   
   const breadcrumbs = ['Workspace', 'Folder 2', 'Spreadsheet 3'];
 
