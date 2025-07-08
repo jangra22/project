@@ -1,6 +1,6 @@
 import React from 'react';
 import { Column } from '../../types';
-import { getColumnLabel } from '../../data/mockData';
+//import { getColumnLabel } from '../../data/mockData';
 
 interface SpreadsheetHeaderProps {
   columns: Column[];
