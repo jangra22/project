@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Toolbar from './components/Toolbar/Toolbar';
 import SpreadsheetGrid from './components/Spreadsheet/SpreadsheetGrid';
